@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace ChocolateBoxesAllisonC
 {
-    public partial class Form1 : Form
+    public partial class frmChocolateBoxes : Form
     {
-        public Form1()
+        public frmChocolateBoxes()
         {
             InitializeComponent();
+        }
+
+        private void mniExit_Click(object sender, EventArgs e)
+        {
+            //closes the program when clicked
+            this.Close();
         }
     }
 }
