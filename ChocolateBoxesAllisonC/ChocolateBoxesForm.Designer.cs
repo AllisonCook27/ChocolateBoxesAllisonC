@@ -33,25 +33,26 @@
             this.lblBoxesSold = new System.Windows.Forms.Label();
             this.lblget = new System.Windows.Forms.Label();
             this.mnu = new System.Windows.Forms.MenuStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNumberOfBoxes = new System.Windows.Forms.TextBox();
             this.lblHonorable = new System.Windows.Forms.Label();
             this.lblsmall = new System.Windows.Forms.Label();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.picPrize = new System.Windows.Forms.PictureBox();
             this.mnu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPrize)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Gentium Basic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(147, 120);
+            this.btnCheck.Location = new System.Drawing.Point(151, 103);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(75, 25);
             this.btnCheck.TabIndex = 0;
             this.btnCheck.Text = "Check";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // lblPrize
             // 
@@ -93,20 +94,12 @@
             this.mnu.TabIndex = 6;
             this.mnu.Text = "menuStrip1";
             // 
-            // pictureBox1
+            // txtNumberOfBoxes
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(19, 173);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 76);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(266, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtNumberOfBoxes.Location = new System.Drawing.Point(266, 47);
+            this.txtNumberOfBoxes.Name = "txtNumberOfBoxes";
+            this.txtNumberOfBoxes.Size = new System.Drawing.Size(100, 20);
+            this.txtNumberOfBoxes.TabIndex = 8;
             // 
             // lblHonorable
             // 
@@ -139,19 +132,29 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
+            // 
+            // picPrize
+            // 
+            this.picPrize.Location = new System.Drawing.Point(19, 148);
+            this.picPrize.Name = "picPrize";
+            this.picPrize.Size = new System.Drawing.Size(122, 101);
+            this.picPrize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPrize.TabIndex = 7;
+            this.picPrize.TabStop = false;
             // 
             // frmChocolateBoxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(377, 261);
             this.Controls.Add(this.lblsmall);
             this.Controls.Add(this.lblHonorable);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtNumberOfBoxes);
+            this.Controls.Add(this.picPrize);
             this.Controls.Add(this.lblget);
             this.Controls.Add(this.lblBoxesSold);
             this.Controls.Add(this.lblPrize);
@@ -162,7 +165,7 @@
             this.Text = "Chocolate Boxes by Allison C";
             this.mnu.ResumeLayout(false);
             this.mnu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPrize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,8 +180,8 @@
         private System.Windows.Forms.MenuStrip mnu;
         private System.Windows.Forms.ToolStripMenuItem mniFile;
         private System.Windows.Forms.ToolStripMenuItem mniExit;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox picPrize;
+        private System.Windows.Forms.TextBox txtNumberOfBoxes;
         private System.Windows.Forms.Label lblHonorable;
         private System.Windows.Forms.Label lblsmall;
     }
