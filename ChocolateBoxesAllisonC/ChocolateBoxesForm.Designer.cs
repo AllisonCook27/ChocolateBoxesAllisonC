@@ -33,12 +33,13 @@
             this.lblBoxesSold = new System.Windows.Forms.Label();
             this.lblget = new System.Windows.Forms.Label();
             this.mnu = new System.Windows.Forms.MenuStrip();
+            this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             this.txtNumberOfBoxes = new System.Windows.Forms.TextBox();
             this.lblHonorable = new System.Windows.Forms.Label();
             this.lblsmall = new System.Windows.Forms.Label();
-            this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             this.picPrize = new System.Windows.Forms.PictureBox();
+            this.lblTry = new System.Windows.Forms.Label();
             this.mnu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPrize)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +95,21 @@
             this.mnu.TabIndex = 6;
             this.mnu.Text = "menuStrip1";
             // 
+            // mniFile
+            // 
+            this.mniFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniExit});
+            this.mniFile.Name = "mniFile";
+            this.mniFile.Size = new System.Drawing.Size(37, 20);
+            this.mniFile.Text = "File";
+            // 
+            // mniExit
+            // 
+            this.mniExit.Name = "mniExit";
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
+            this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
+            // 
             // txtNumberOfBoxes
             // 
             this.txtNumberOfBoxes.Location = new System.Drawing.Point(266, 47);
@@ -121,21 +137,6 @@
             this.lblsmall.TabIndex = 10;
             this.lblsmall.Text = "Small Prize";
             // 
-            // mniFile
-            // 
-            this.mniFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniExit});
-            this.mniFile.Name = "mniFile";
-            this.mniFile.Size = new System.Drawing.Size(37, 20);
-            this.mniFile.Text = "File";
-            // 
-            // mniExit
-            // 
-            this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(92, 22);
-            this.mniExit.Text = "Exit";
-            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
-            // 
             // picPrize
             // 
             this.picPrize.Location = new System.Drawing.Point(19, 148);
@@ -145,12 +146,23 @@
             this.picPrize.TabIndex = 7;
             this.picPrize.TabStop = false;
             // 
+            // lblTry
+            // 
+            this.lblTry.AutoSize = true;
+            this.lblTry.Font = new System.Drawing.Font("Charlemagne Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTry.Location = new System.Drawing.Point(152, 207);
+            this.lblTry.Name = "lblTry";
+            this.lblTry.Size = new System.Drawing.Size(225, 19);
+            this.lblTry.TabIndex = 11;
+            this.lblTry.Text = "Next time try harder";
+            // 
             // frmChocolateBoxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(377, 261);
+            this.Controls.Add(this.lblTry);
             this.Controls.Add(this.lblsmall);
             this.Controls.Add(this.lblHonorable);
             this.Controls.Add(this.txtNumberOfBoxes);
@@ -184,6 +196,7 @@
         private System.Windows.Forms.TextBox txtNumberOfBoxes;
         private System.Windows.Forms.Label lblHonorable;
         private System.Windows.Forms.Label lblsmall;
+        private System.Windows.Forms.Label lblTry;
     }
 }
 
